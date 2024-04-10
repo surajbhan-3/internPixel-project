@@ -92,31 +92,6 @@ nav ul li a:hover {
 }
 
 
-/* .whitebutton {
-    display: flex;
-    gap: 29px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    color: #0B0D0E;
-}
-
-.bluebutton {
-    display: flex;
-    gap: 29px;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    color: #0B0D0E;
-    border-radius: 12px;
-    background-color: var(--bg-primary);
-} */
-
 .primary-btn {
     background-color: #651FFF;
     color: white;
@@ -292,5 +267,8 @@ button:hover {
     }
 
 }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/main
