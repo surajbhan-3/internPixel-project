@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One:wght@300;400;500;600;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+
 
 body {
 
@@ -8,17 +13,10 @@ body {
     box-sizing: border-box;
 }
 
-.navbar-menu-item a {
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to navbar menu items */
+:root {
+    --bg-primary: #651FFF;
 }
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 64px;
-    background: white;
-}
 
 .mid-area {
     background-color: #f0f0f0; /* Off-white color */
@@ -37,139 +35,21 @@ body {
     text-decoration: none;
     color: rgba(101, 31, 255, 1);
 }
-.navbar-menu{
-    display: flex;
-    list-style: none;
-    text-align: center;
 
-}
-.navbar-menu-item{
-    font-size: 1rem;
-    line-height: 40px;
-    margin-right: 1.5rem;
-   
-}
-.navbar-menu-item::after{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: all 0.5s ease-in-out;
-}
 
-.navbar-menu-item:hover::after{
-    width: 100%;
-    background: rgba(101, 31, 255, 1); ;
-}
-.navbar-menu-item a{
-color:rgba(92, 95, 110, 1);
-    text-decoration: none;
-    padding: 0.5rem;
-}
-.extra{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: montserrat;
-    color:  rgba(92, 95, 110, 1);
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.btns{
-    display: flex;
-    align-items: center;
-    margin-right: -30px;
-    justify-content: center;
-    gap: 1rem;
-}
-.btns span{
-    display: flex;
-    margin: 0px 10px;
-}
-
-.btns span a{
-    text-decoration: none;
-}
-
-.sign{
-    padding: 10px 15px;
-    border: 2px solid black;
-    background: white;
-    color: black;
-    border-radius: 12px;
-
-}
-nav .btns span:nth-child(2) a {
-    background: rgba(101, 31, 255, 1);
-    padding: 10px 15px;
-    border-radius: 12px;
-    transition: 0.4s ease-in;
-    color: white;
-}
-nav .btns span:nth-child(2) a:hover{
-background: transparent;
-color: rgba(92, 95, 110, 1) ;
-border: 1px solid #8B68FF;
-
-}
-.header{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-  
-
-}
 .content{
-    margin-top: 2%;
+    margin-top: 0px;
     margin-left: 5% ;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.main_para{
-    text-align: center;
-    font-family: montserrat;
-    font-size: 3.2rem;
-    font-weight: 700;
-    width: 90%;
-}
-.bold{
-    color: rgba(101, 31, 255, 1);
-
-}
-.second_para{
-    text-align: center;
-    font-size: 1.3rem;
-    display: flex;
-    font-family: montserrat;
-    justify-content: center ;
-    width: 60%;
-    font-weight: 100;
-    color: rgba(92, 95, 110, 1);
-
-}
-.image-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.image-content img{
-    height: 100%;
-    width: 70%;
-    
-
+    font-family: Rajdhani;
 }
 
 
 
-:root {
-    --bg-primary: #651FFF;
-}
 
 
 /* Navbar styling */
@@ -210,7 +90,6 @@ nav ul li a {
     color: #5C5F6E;
     text-decoration: none;
     font-weight: 80;
-    color: rgba(128, 128, 128, 0.789);
     transition: all .2s ease-in;
 }
 
@@ -252,6 +131,7 @@ nav ul li a:hover {
 .primary-btn {
     background-color: #651FFF;
     color: white;
+    border: 0px solid grey;
 }
 
 .primary-btn:hover {
@@ -298,10 +178,16 @@ button:hover {
     font-size: 55px;
 }
 
+.btn-section{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
 .para {
     font-size: 22px;
-    color: rgba(128, 128, 128, 0.814);
+    color: #54555a;
     font-weight: 300;
+    margin-top: -10px;
 }
 
 .fa-bars {
@@ -311,28 +197,32 @@ button:hover {
     display: none;
 }
 
+#menu-btn{
+    display: none;
+}
 /* active */
 
-.active ul {
+ .active ul {
     display: block;
 }
 
 .svg {
     width: 100%;
     height: 650px;
+    object-fit: contain;
 }
 
 
 /* media queries for desktop */
 
 
-@media (min-width : 800px) and (max-width: 1251px) {
+@media (min-width : 1000px) and (max-width: 1980px) {
     .logo {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     nav ul li a {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .links ul {
@@ -355,6 +245,13 @@ button:hover {
     .para-text {
         font-size: 40px;
     }
+    .fa-bars {
+        display: none;
+    }
+   .navbar .active ul{
+        display: block;
+    }
+    
 }
 
 /* media queries for tablets */
@@ -396,6 +293,9 @@ button:hover {
         width: 85%;
         height: 500px;
     }
+    #menu-btn{
+        display: block;
+    }
 }
 
 /* media queries for mobile */
@@ -422,6 +322,9 @@ button:hover {
     .svg {
         width: 82%;
         height: 370px;
+    }
+    #menu-btn{
+        display: block;
     }
 
 }
