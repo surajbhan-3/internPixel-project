@@ -326,9 +326,12 @@ button:hover {
 /* media queries for desktop */
 
 
-@media (min-width : 800px) and (max-width: 1251px) {
+@media (min-width : 800px) {
     .logo {
         font-size: 1rem;
+    }
+    #menu-btn{
+        display: none;
     }
 
     nav ul li a {
@@ -373,7 +376,7 @@ button:hover {
     }
 
     .active ul {
-        display: none;
+        display: block;
     }
 
     .active .right {
@@ -394,7 +397,7 @@ button:hover {
 
     .svg {
         width: 85%;
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -421,7 +424,6 @@ button:hover {
 
     .svg {
         width: 82%;
-        height: 370px;
     }
 
 }
