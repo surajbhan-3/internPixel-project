@@ -335,19 +335,25 @@ button:hover {
 
     .content h3, .para-text {
         font-size: 17px;
+        margin-top: 5%;
     }
 
     .para {
         font-size: 12px;
+        margin-top: 5%;
     }
-
+    .btn-section{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
     button {
         padding: 3px 15px 4px 15px;
         font-size: 10px;
     }
 
     .svg {
-        width: 82%;
+        width: 100%;
+        margin-top: 8%;
     }
     #menu-btn{
         display: block;
